@@ -7,9 +7,11 @@
     </div>
     <div class="sidebar custom-scrollbar">
         <div class="sidebar-user text-center">
-            <div><img class="img-60 rounded-circle lazyloaded blur-up"
+            <div>
+                {{ config('app.name', 'Laravel') }}
+                {{-- <img class="img-60 rounded-circle lazyloaded blur-up"
                      src="../assets/images/dashboard/man.png"
-                     alt="#">
+                     alt="#"> --}}
             </div>
             <h6 class="mt-3 f-14">{{ auth()->user()->name }}</h6>
             {{-- <p>CEO</p> --}}

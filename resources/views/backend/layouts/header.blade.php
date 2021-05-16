@@ -81,10 +81,12 @@
                 <li><a href="#"><i
                            data-feather="message-square"></i><span class="dot"></span></a></li>
                 <li class="onhover-dropdown">
-                    <div class="media align-items-center"><img
+                    <div class="media align-items-center">
+                        {{ config('app.name', 'Laravel') }}
+                        {{-- <img
                              class="align-self-center pull-right img-50 rounded-circle blur-up lazyloaded"
                              src="../assets/images/dashboard/man.png"
-                             alt="header-user">
+                             alt="header-user"> --}}
                         <div class="dotted-animation"><span class="animate-circle"></span><span
                                   class="main-circle"></span></div>
                     </div>

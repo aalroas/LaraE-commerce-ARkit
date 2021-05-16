@@ -94,8 +94,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="validationCustomtitle" class="col-form-label pt-0"><span>*</span>
-                                    SKU</label>
-                                <input class="form-control" name="sku" type="text" value="{{$product->sku}}" required="">
+                                    model</label>
+                                <input class="form-control" name="model" type="text" value="{{$product->model}}" required="">
                             </div>
                             {{-- <div class="form-group">
                                 <label class="col-form-label"><span>*</span> Categories</label>

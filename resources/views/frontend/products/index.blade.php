@@ -30,7 +30,7 @@
                                     <button style="border: none !important;background-color: transparent; " type="button"
                                             data-toggle="modal"
                                             data-target="#letsGoModal"
-                                            onclick="letsGo('{{$product->sku}}')">
+                                            onclick="letsGo('{{$product->model}}')">
                                         <span class="lable1">Try it now</span><span class="lable2">VTO</span>
                                         </i>
                                     </button>

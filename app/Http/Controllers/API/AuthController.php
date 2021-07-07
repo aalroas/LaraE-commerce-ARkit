@@ -64,10 +64,10 @@ class AuthController extends Controller
 
     public function logout()
     { 
-        $user = Auth::user()->token();
+        $user = auth()->user()->token();
         $user->revoke();
         $user->save();
-        
+
         return response(['logout' => true]);
     }
 

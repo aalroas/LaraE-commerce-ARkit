@@ -18,7 +18,7 @@ class OrderController extends Controller
     public function index()
     {
         $orders = auth()->user()->orders;
-        return response([ 'orders' => OrderResource::collection($orders), 'message' => 'Retrieved successfully'], 200);
+    return response([ 'orders' => OrderResource::collection($orders), 'message' => 'Retrieved successfully'], 200);
     }
 
     /**

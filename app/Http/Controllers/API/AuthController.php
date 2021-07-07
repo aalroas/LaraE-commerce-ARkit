@@ -68,7 +68,7 @@ class AuthController extends Controller
         $user->revoke();
         $user->save();
 
-        return response(['logout' => true]);
+        return response(['error' => 0]);
     }
 
     

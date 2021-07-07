@@ -43,7 +43,10 @@ class UserAccountController extends Controller
         $user = User::find(auth()->user()->id);
         $user->name =  $request->name;
         $user->email =  $request->email;
-        $user->password =  Hash::make($request->password);
+        if ($request->password) {
+            $user->password =  Hash::make($request->password);
+        }
+   
         $user->save();
         return redirect(route('frontend.account.edit'));
     }

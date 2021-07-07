@@ -92,7 +92,7 @@
                                 <div class="form-group">
                                     <label for="validationCustomtitle" class="col-form-label pt-0"><span>*</span>
                                         model</label>
-                                    <input class="form-control" name="model" type="text" required="">
+                                    <input class="form-control" name="model" type="file" required="">
                                 </div>
                                 {{-- <div class="form-group">
                                 <label class="col-form-label"><span>*</span> Categories</label>

@@ -95,7 +95,7 @@
                             <div class="form-group">
                                 <label for="validationCustomtitle" class="col-form-label pt-0"><span>*</span>
                                     model</label>
-                                <input class="form-control" name="model" type="text" value="{{$product->model}}" required="">
+                                <input class="form-control" name="model" type="file" value="{{$product->model}}" required="">
                             </div>
                             {{-- <div class="form-group">
                                 <label class="col-form-label"><span>*</span> Categories</label>

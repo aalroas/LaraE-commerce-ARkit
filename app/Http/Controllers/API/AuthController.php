@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -64,9 +64,11 @@ class AuthController extends Controller
 
     public function logout()
     { 
-        if (Auth::check()) {
-        Auth::user()->AauthAcessToken()->delete();
-        }
+        $user = Auth::user()->token();
+        $user->revoke();
+        $user->save();
+        
+        return response(['logout' => true]);
     }
 
     

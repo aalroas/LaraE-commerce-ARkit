@@ -39,7 +39,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $request->validate([$request->all()]);
-        $product = Product::create($request->except('image'));
+        $product = Product::create($request->except('image','model'));
         if ($request->hasFile('image')) {
                 $image_name = date('mdYHis') . uniqid() .'.'. $request->file('image')->getClientOriginalExtension();
                 $path = $this->getUploadPath();

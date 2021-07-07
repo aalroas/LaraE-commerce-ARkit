@@ -21,16 +21,10 @@ class ProductController extends Controller
         return response([ 'products' => ProductResource::collection($products), 'message' => 'Retrieved successfully'], 200);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Product  $Product
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         $product = Product::find($id);
-        return response([ 'product' => new ProductResource($Product), 'message' => 'Retrieved successfully'], 200);
+        return response([ 'product' => new ProductResource($product), 'message' => 'Retrieved successfully'], 200);
 
     }
 
